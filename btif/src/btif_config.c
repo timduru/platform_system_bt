@@ -497,6 +497,7 @@ static void btif_config_write(UNUSED_ATTR UINT16 event, UNUSED_ATTR char *p_para
   btif_config_remove_unpaired(config_paired);
   config_save(config_paired, CONFIG_FILE_PATH);
   config_free(config_paired);
+  sync();
   pthread_mutex_unlock(&lock);
 }
 
