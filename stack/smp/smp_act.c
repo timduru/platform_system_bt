@@ -23,6 +23,8 @@
 #include "stack/include/l2c_api.h"
 #include "stack/smp/smp_int.h"
 #include "utils/include/bt_utils.h"
+#include <cutils/log.h>
+
 
 extern fixed_queue_t *btu_general_alarm_queue;
 
